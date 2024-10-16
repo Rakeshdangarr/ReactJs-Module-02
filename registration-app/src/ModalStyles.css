@@ -1,0 +1,90 @@
+/* Modal container customization */
+.modal-header {
+    border-bottom: none;
+  }
+  
+  .modal-header .close {
+    outline: none;
+  }
+  
+  .modal-title {
+    font-weight: bold;
+    text-align: center;
+    width: 100%;
+  }
+  
+  .modal-body {
+    padding: 20px;
+  }
+  
+  .modal-footer {
+    border-top: none;
+  }
+  
+  /* Custom styling for the form inputs */
+  .form-control {
+    margin-bottom: 15px;
+    border-radius: 4px;
+    border: 1px solid #ced4da;
+    box-shadow: none;
+    height: 50px;
+  }
+  
+  .form-control:focus {
+    border-color: #80bdff;
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+  }
+  
+  /* Checkbox styling */
+  .form-check-label {
+    margin-left: 10px;
+    font-weight: 500;
+  }
+  
+  .form-check-input {
+    width: 20px;
+    height: 20px;
+  }
+  
+  /* Custom login and register buttons */
+  .btn-primary {
+    width: 100%;
+    height: 50px;
+    background-color: #f58220;
+    border: none;
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  .btn-primary:hover {
+    background-color: #f58e40;
+  }
+  
+  /* Links below the form */
+  .modal-body a {
+    display: block;
+    text-align: center;
+    color: #007bff;
+    margin-top: 10px;
+  }
+  
+  .modal-body a:hover {
+    color: #0056b3;
+    text-decoration: none;
+  }
+  
+  /* Centering the modal content */
+  .modal-dialog {
+    max-width: 400px;
+    margin: 1.75rem auto;
+  }
+  
+  /* Margin adjustments */
+  .ml-2 {
+    margin-left: 10px;
+  }
+  
+  /* Text alignment */
+  .text-center {
+    text-align: center;
+  }

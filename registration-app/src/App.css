@@ -1,0 +1,139 @@
+@import url('https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+
+.modal {
+  overflow-y: auto;
+}
+
+.modal-dialog {
+  max-width: 500px;
+  margin: auto;
+}
+
+.modal-content {
+  border-radius: 0;
+  padding: 20px;
+}
+
+.modal-title {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.close {
+  color: #1cd8ad;
+  opacity: 0.75;
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+.close:hover, .close:focus {
+  color: #39e8b0;
+  opacity: 1;
+  text-decoration: none;
+}
+
+.form-group {
+  position: relative;
+  margin-bottom: 1.5em;
+}
+
+.form-control {
+  border: none;
+  border-bottom: 1px solid #adadad;
+  border-radius: 0;
+}
+
+.form-control:focus {
+  outline: none;
+  border-color: #adadad;
+  box-shadow: none;
+}
+
+.form-control-placeholder {
+  position: absolute;
+  top: -1;
+  padding: 7px 0 0 13px;
+  transition: all 200ms;
+  opacity: 0.5;
+}
+
+.form-control:focus + .form-control-placeholder,
+.form-control:valid + .form-control-placeholder {
+  font-size: 75%;
+  transform: translate3d(0, -100%, 0);
+  opacity: 1;
+}
+
+.container-checkbox {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.container-checkbox input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.checkmark-box {
+  position: relative;
+  height: 20px;
+  width: 20px;
+  background-color: #adadad;
+  margin-right: 10px;
+}
+
+.container-checkbox input:checked ~ .checkmark-box {
+  background-color: #f58220;
+}
+
+.container-checkbox input:checked ~ .checkmark-box:after {
+  content: "";
+  position: absolute;
+  display: block;
+  left: 7px;
+  top: 2px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+}
+
+.btn-primary {
+  background-color: #f58220;
+  border-color: #f58220;
+}
+
+.btn-primary:hover {
+  background-color: #e57219;
+  border-color: #e57219;
+}
+
+.text-secondary {
+  color: #6c757d;
+}
+
+.text-primary {
+  color: #007bff;
+}
+
+.forgot-pass-fau a {
+  text-decoration: none !important;
+  font-size: 14px;
+}
+
+@media (max-width: 768px) {
+  .modal-dialog {
+    width: 90%; 
+  }
+  
+  .modal-title {
+    font-size: 1.5em;
+  }
+  
+  .form-control-placeholder {
+    font-size: 90%;
+  }
+}
